@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login - Lyrical Novaa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="auth-container fade-in">
+    <h1>Login</h1>
+    <form id="login-form">
+      <input type="text" placeholder="Artist ID" id="login-id" required />
+      <input type="password" placeholder="Password" id="login-pass" required />
+      <button type="submit">Login</button>
+      <p class="switch">No account? <a href="register.html">Register</a></p>
+    </form>
+  </div>
+
+  <div id="alert-modal" class="modal hidden">
+    <div class="modal-box">
+      <p id="alert-text"></p>
+      <button id="alert-ok">OK</button>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
