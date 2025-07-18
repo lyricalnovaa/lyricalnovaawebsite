@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #001a33;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.auth-container {
+  background: #002b80;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #003d99;
+  text-align: center;
+  animation: slideUp 1s ease;
+}
+
+.auth-container h1 {
+  margin-bottom: 20px;
+  color: #06f;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 6px;
+  background: #003366;
+  color: white;
+  outline: none;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  background: #06f;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #0044cc;
+}
+
+.switch {
+  margin-top: 15px;
+  font-size: 0.9em;
+}
+
+.switch a {
+  color: #06f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-box {
+  background: #003366;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+  min-width: 250px;
+}
+
+.modal-box button {
+  background: #06f;
+  color: white;
+  border: none;
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
